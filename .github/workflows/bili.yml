@@ -114,7 +114,6 @@ jobs:
           bvid: ${{ env.bvid }}
       - uses: actions/checkout@v4
       - name: get content
-        if: ${{ steps.check-branch-exists.outputs.exists == 'false' || env.exec-even-exist == 'true' }}
         uses: mdark-org/autodoc-action@v0.2.1
         with:
           token: ${{ secrets.GEMINI_TOKEN }}
