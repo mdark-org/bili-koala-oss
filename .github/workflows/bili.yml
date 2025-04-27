@@ -58,17 +58,14 @@ on:
         description: "filepath-template"
         required: false
         type: string
-      system-prompt-template:
-        description: "system-prompt-template"
-        required: false
-        type: string
       prompt-template:
         description: "prompt-template"
         required: false
         type: string
-      markdown-template:
-        description: "markdown-template"
+      commit-type:
+        description: "commit type, pr | commit"
         required: false
+        default: 'pr'
         type: string
       commit-message-template:
         description: "commit-message-template"
