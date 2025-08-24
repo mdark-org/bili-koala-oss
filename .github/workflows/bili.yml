@@ -109,12 +109,12 @@ jobs:
     steps:
       - name: get video
         id: bili
-        uses: ktKongTong/bili-action@v0.2.11
+        uses: mdark-org/bili-action@v0.2.11
         with:
           bvid: ${{ env.bvid }}
       - uses: actions/checkout@v4
       - name: get content
-        uses: mdark-org/autodoc-action@v0.2.1
+        uses: mdark-org/autodoc-action@v0.2.3
         with:
           token: ${{ secrets.GEMINI_TOKEN }}
           github-token: ${{ secrets.PAT }}
