@@ -38,4 +38,5 @@ jobs:
       model: 'gemini-2.5-flash'
       maxOutputTokens: '65536'
       commit-type: 'commit'
-      branch: 'fetch/${{ matrix.event.bvid }}'
+      # branch: 'fetch/${{ matrix.event.bvid }}'
+      branch: 'master'
