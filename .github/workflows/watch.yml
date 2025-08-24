@@ -39,4 +39,4 @@ jobs:
       maxOutputTokens: '65536'
       commit-type: 'commit'
       # branch: 'fetch/${{ matrix.event.bvid }}'
-      branch: 'master'
+      branch: 'main'
